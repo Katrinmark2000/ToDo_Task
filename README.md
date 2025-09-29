@@ -1,5 +1,8 @@
 # React ToDo App 📝
 
+<img width="853" height="596" alt="Снимок экрана 2025-09-29 в 15 47 25" src="https://github.com/user-attachments/assets/a60d6e00-2108-49fb-8975-a9995fe39e88" />
+
+
 Простой ToDo-приложение на **React** и **TypeScript** с локальным хранением задач в `localStorage`.
 
 ---
