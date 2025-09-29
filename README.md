@@ -4,6 +4,7 @@
 
 
 Простой ToDo-приложение на **React** и **TypeScript** с локальным хранением задач в `localStorage`.
+https://katrinmark2000.github.io/ToDo_Task/
 
 ---
 
