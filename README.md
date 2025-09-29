@@ -44,5 +44,5 @@ npm install
 3. Запустить приложение:
 
 ```bash
-npm start
+npm run dev
 ```
