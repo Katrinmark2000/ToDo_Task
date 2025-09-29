@@ -4,6 +4,7 @@ import styles from './todoItem.module.scss'
 import { FiEdit3 } from "react-icons/fi";
 import { RiDeleteBin4Fill } from "react-icons/ri";
 import { MdDone } from "react-icons/md";
+import { Input } from '../input/input';
 
 
 type TaskItemProps = {
@@ -24,7 +25,6 @@ export const TodoItem = ({
     onEdit,
     onDelete,
     onSave,
-    onCancel,
     isEditing
 }: TaskItemProps) => {
     const [editText, setEditText] = useState(task);
@@ -46,18 +46,10 @@ export const TodoItem = ({
         onChange={onToggle}
         className={styles.checkbox}/>
         {isEditing ? (
-            <input
+            <Input
               ref={inputRef}
               value={editText}
               onChange={e => setEditText(e.target.value)}
-              onBlur={() => {
-                if (editText.trim() !== '') {
-                  onSave(editText.trim());
-                } else {
-                  onCancel();
-                }
-              }}
-              className={styles.editInput}
             />
           ) : (
             <span

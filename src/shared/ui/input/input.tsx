@@ -1,15 +1,18 @@
 import type { TInputUIProps } from './type';
 import styles from './input.module.scss';
+import { forwardRef } from 'react';
 
-export const Input = ({
+export const Input = forwardRef<HTMLInputElement, TInputUIProps>(
+  ({
   value,
   onChange,
   placeholder,
   type = 'text',
   disabled = false,
-}: TInputUIProps) => {
+}, ref) => {
   return (
     <input
+    ref={ref}
       className={styles.input}
       type={type}
       value={value}
@@ -18,4 +21,5 @@ export const Input = ({
       disabled={disabled}
     />
   );
-};
+}
+)
