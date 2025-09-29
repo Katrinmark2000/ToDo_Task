@@ -37,7 +37,6 @@ export const TodoItem = ({
         }
       }, [isEditing, task]);
 
-    
     return (
       <div className={styles.taskBlock}>
       <div className={styles.leftSide}>
