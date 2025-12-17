@@ -1,0 +1,16 @@
+.app {
+    width: auto;
+    max-width: 1900px;
+    height: fit-content;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.title {
+    font-size: 24px;
+    text-align: center;
+    font-family: sans-serif;
+}

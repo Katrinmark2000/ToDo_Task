@@ -1,0 +1,11 @@
+.progressBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: var(-font-size-main);
+    padding: 7px 14px 7px 0;
+    font-family: sans-serif;
+    width: fit-content;
+    margin: 0 auto;
+}
